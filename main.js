@@ -24,7 +24,8 @@ function links() {
 // const btnEl = document.getElementById('reservation-btn');
 
 let booked = document.getElementById('reservation-btn');
-function booked() {
+
+function book() {
     // alert('Table booked');
 };
 
