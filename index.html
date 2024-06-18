@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -43,7 +44,7 @@
             <div>
                 <!-- <img src="./images/bg.jfif" alt=""> -->
             </div>
-            <div id="main-text">
+            <div id="main-text" data-aos="zoom-in" data-aos-duration="1300">
                 <h2>Coffee factory</h2>
                 <p class="first-span"><span class="span">
                     <img src="./images/fimage2.jpg" alt="image">
@@ -62,7 +63,7 @@
 
 
     <!-- SECTION TWO -->
-    <section id="section-two">
+    <section id="section-two" data-aos="fade-up" data-aos-duration="2000">
         <div id="subsec-two">
             <h3>Our delicious offer</h3>
             <p class="para">
@@ -116,7 +117,7 @@
     <!-- SECTION THREE -->
     <section id="section-three">
         <section id="subsection-three">
-            <div id="subsec-three">
+            <div id="subsec-three" data-aos="fade-up" data-aos-duration="2000">
                 <div>
                     <h3>The coffee herald</h3>
                     <p class="para">
@@ -160,7 +161,7 @@
             </div>
         </section>
         <section id="background-logo">
-            <div class="bg-logo">
+            <div class="bg-logo" data-aos="zoom-in" data-aos-duration="2000">
                 <!-- <ion-icon name="cafe-outline"></ion-icon> -->
                 <div id="home-logo">
                     <img src="./images/logo.jfif" alt="">
@@ -213,7 +214,7 @@
 
     <!-- SECTION FIVE -->
     <section id="section-five">
-        <div id="subsec-five">
+        <div id="subsec-five" data-aos="fade-up" data-aos-duration="2000">
             <div>
                 <h3>Online coffee shop</h3>
                 <p class="para">
@@ -298,7 +299,7 @@
 
     <!-- SECTION SEVEN -->
     <section id="section-seven">
-        <div id="subsec-seven">
+        <div id="subsec-seven" data-aos="zoom-in" data-aos-duration="2000">
             <div id="para-one">
                 <p>Contact us for any inquiries or special requests at our coffee restaurant.</p>
             </div>
@@ -385,5 +386,12 @@
 
 
     <script src="./main.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 10
+      });
+    </script>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -49,7 +50,7 @@
             <h3>Get in touch with us!</h3>
         </div> -->
         <div id="general-booking">
-            <div id="contact-locations">
+            <div id="contact-locations" data-aos="fade-right" data-aos-duration="2000">
                 <div class="contact-information">
                     <div class="contact-icons">
                         <ion-icon name="call-outline"></ion-icon>
@@ -80,7 +81,7 @@
                     </div>
                 </div>
             </div>
-            <div id="booking-section">
+            <div id="booking-section" data-aos="fade-left" data-aos-duration="2000">
                 <h3>Book a table</h3>
                 <!-- <div>
                     <p>
@@ -96,38 +97,39 @@
                     <div id="input-sec">
                         <div class="input-divs">
                             <div class="details">
-                                <input type="text" placeholder="Your Name" class="input-field">
-                                <p class="warning-text">hdhddh</p>
+                                <input type="text" placeholder="Your Name" id="name" class="input-field" required>
+                                <p class="warning-text"></p>
                             </div>
                             <div class="details">
-                                <input type="text" placeholder="Phone Number" class="input-field">
-                                <p class="warning-text">hdhddh</p>
+                                <input type="text" placeholder="Phone Number" id="phone-number" class="input-field" required>
+                                <p class="warning-text"></p>
                             </div>
                             <div class="details">
-                                <input type="time" name="time" id="time" class="input-field">
-                                <p class="warning-text">hdhddh</p>
+                                <input type="time" name="time" id="time" class="input-field" required>
+                                <p class="warning-text"></p>
                             </div>   
                         </div>
                         <div class="input-divs">
                             <div class="details">
-                                <input type="text" placeholder="Email Address" class="input-field">
-                                <p class="warning-text">hdhddh</p>
+                                <input type="text" placeholder="Email Address" id="eemail" class="input-field" required>
+                                <p class="warning-text"></p>
                             </div>
                             <div class="details">
-                                <input type="date" name="birthday" class="input-field">
-                                <p class="warning-text">hdhddh</p>
+                                <input type="date" name="birthday" id="date" class="input-field" required>
+                                <p class="warning-text"></p>
                             </div>
                             <div class="details">
-                                <input type="number" placeholder="Number of People" min="1" max="20" class="input-field">
-                                <p class="warning-text">hdhddh</p>
+                                <input type="number" placeholder="Number of People" min="1" 
+                                max="20" id="number" class="input-field" required>
+                                <p class="warning-text"></p>
                             </div>
                         </div>
                     </div>
                     <div id="txtarea">
-                        <textarea name="#" id=""></textarea>
+                        <textarea name="#" id="reservationMsg" required></textarea>
                     </div>
                     <div id="book-button">
-                        <button id="reservation-btn" onclick="booked()">Book a table</button>
+                        <button id="reservation-btn">Book a table</button>
                     </div>
                 </form>
             </div>
@@ -137,16 +139,18 @@
 
     <!-- CONTACT SECTION THREE -->
     <div id="image-sec">
-        <div id="best-offers">
-            <h3>Get Best Offers On The Coffee</h3>
-            <p>
-                With the subscription, enjoy your favourite coffees
-                without having to think about it.
-            </p>
-        </div>
-        <div id="subscription">
-            <input type="email" id="email-address" placeholder="Your Email Address">
-            <button id="subscribe-button">subscribe now</button>
+        <div data-aos="zoom-in" data-aos-duration="1800">
+            <div id="best-offers">
+                <h3>Get Best Offers On The Coffee</h3>
+                <p>
+                    With the subscription, enjoy your favourite coffees
+                    without having to think about it.
+                </p>
+            </div>
+            <div id="subscription" data-aos="zoom-in" data-aos-duration="2000">
+                <input type="email" id="email-address" placeholder="Your Email Address">
+                <button id="subscribe-button" onclick="sub()">subscribe now</button>
+            </div>
         </div>
     </div>
 
@@ -285,6 +289,13 @@
             </div>
         </div>
     </section>
+
     <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 10
+      });
+    </script>
 </body>
 </html>
